@@ -1,0 +1,203 @@
+<Launch>:
+
+
+
+    FloatLayout:
+
+
+                           
+        ActionBar:
+            
+            pos_hint: {'top':1}
+            size_hint_y: .10
+            background_color: 94, 83, 83, 0.3
+
+            ActionView:
+                
+            
+                ActionPrevious:
+                    with_previous: False
+                    title:' Welcome to OrientalMusicSheets App'
+                    halign:"center"
+                    app_icon:""
+            
+
+                ActionButton:
+                    text:'img'
+                    icon:""
+                    on_press: root.say_hello()
+                    
+    Label:
+        canvas.before:
+        text:'This is a Beta Ver'
+        color: 1,0.5,0,1 
+        text_size: self.size
+        halign: 'right'
+        valign: 'bottom'
+
+
+   
+        
+            
+ 
+
+
+
+ 
+                
+
+    
+
+    BoxLayout:
+        
+        padding:20
+        spacing:10
+        
+        
+    
+        
+
+    Accordion:
+
+        size_hint: (1,.90)
+        
+
+        AccordionItem:
+            title: 'Maqamat'
+            Label:
+                text: 'This is a label fit to the content view'
+                text_size: self.width, None
+
+        AccordionItem:
+            title: 'Sama3e Notes'
+
+            
+            Button:
+
+                text: 'A button, what else?'
+                
+            Button:
+                text: 'A button, what else2?'
+       
+        AccordionItem:
+            title: 'Longa Notes'
+            Label:
+                text: '''   '''
+                text_size: self.width, None
+                halign: 'center'
+                valign: 'middle'
+        
+        AccordionItem:
+
+            title: 'Collection'
+
+            
+            
+            
+            Button:
+                
+                text: 'A'
+                 
+               
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix
+                             
+            Button:
+                
+                text: 'b'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix
+            Button:
+                
+                text: 'c'
+                
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix
+            Button:
+                
+                text: 'd'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix
+            Button:
+                
+                text: 'e'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix
+            Button:
+                
+                text: 'f'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix    
+            Button:
+                
+                text: 'g'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix            
+        
+            Button:
+                
+                text: 'h'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix    
+            Button:
+                
+                text: 'i'
+                canvas.before:
+                    PushMatrix
+                    Rotate:
+                        angle: 45
+                        origin: self.center
+                canvas.after:
+                    PopMatrix            
+            Button:
+                
+                text: 'k'
+                
+                         
+                   
+                    
+            
+    
+
+
+        
